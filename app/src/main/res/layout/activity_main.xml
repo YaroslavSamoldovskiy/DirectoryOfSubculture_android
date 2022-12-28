@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Справочник субкультур"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTraditionalSkinheads"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTraditionalSkinheads"
+        android:text="Традиционные скинхеды"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRock" />
+
+    <Button
+        android:id="@+id/btnRock"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRock"
+        android:text="Рокеры"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRastafarians" />
+
+    <Button
+        android:id="@+id/btnRastafarians"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRastafarians"
+        android:text="Растаманы"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPunk" />
+
+    <Button
+        android:id="@+id/btnHippies"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickHippies"
+        android:text="Хиппи"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoth" />
+
+    <Button
+        android:id="@+id/btnEmo"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickEmo"
+        android:text="Эмо"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBikers" />
+
+    <Button
+        android:id="@+id/btnNewAge"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNewAge"
+        android:text="Нью Эйдж"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMods" />
+
+    <Button
+        android:id="@+id/btnMods"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickMods"
+        android:text="Моды"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMetallist" />
+
+    <Button
+        android:id="@+id/btnBikers"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBikers"
+        android:text="Байкеры"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlternative" />
+
+    <Button
+        android:id="@+id/btnSubculture"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="onClickSubculture"
+        android:text="Что такое субкультура"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnPunk"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickPunks"
+        android:text="Панки"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewAge" />
+
+    <Button
+        android:id="@+id/btnAlternative"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAlternative"
+        android:text="Альтернативщики"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubculture" />
+
+    <Button
+        android:id="@+id/btnGoth"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGoths"
+        android:text="Готы"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmo" />
+
+    <Button
+        android:id="@+id/btnMetallist"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickMetallist"
+        android:text="Металлисты"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHippies" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
